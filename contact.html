@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Demo Plywood</title>
+  <meta name="description" content="Contact Demo Plywood for plywood, veneer, and laminate enquiries in Rajkot, Gujarat." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a href="index.html" class="brand" aria-label="Demo Plywood home">
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+          <rect x="10" y="10" width="44" height="44" rx="10" stroke="currentColor" stroke-width="2"/>
+          <path d="M22 42V22h12.5c5.6 0 9.5 3.8 9.5 9.1 0 5.2-3.9 10.9-11.8 10.9H22Z" stroke="currentColor" stroke-width="2"/>
+          <path d="M22 32h13" stroke="currentColor" stroke-width="2"/>
+        </svg>
+        <span><strong>Demo</strong> Plywood</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html" class="active">Contact</a>
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="Switch theme">
+          <span class="theme-icon">◐</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero section">
+      <div class="container contact-hero">
+        <div class="reveal">
+          <p class="eyebrow">Business enquiries</p>
+          <h1>Start a conversation about your plywood, veneer, or laminate requirement.</h1>
+          <p class="lead">
+            Use the form below for pricing requests, dealer interest, bulk enquiries, or project-specific material discussions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <aside class="contact-panel reveal">
+          <p class="eyebrow">Company details</p>
+          <h2>Demo Plywood</h2>
+          <div class="contact-meta">
+            <p><strong>Location:</strong> Rajkot, Gujarat</p>
+            <p><strong>Experience:</strong> 5+ Years</p>
+            <p><strong>Industry:</strong> Plywood, Veneers, Laminates</p>
+            <p><strong>Focus:</strong> B2B Supply & Trade Enquiries</p>
+          </div>
+
+          <div class="contact-image">
+            <img
+              src="https://images.unsplash.com/photo-1502005097973-6a7082348e28?auto=format&fit=crop&w=900&q=80"
+              alt="Elegant wood material interior surface display"
+              width="900"
+              height="850"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </aside>
+
+        <div class="form-shell reveal delay-1">
+          <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace with your actual Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+            <input type="hidden" name="subject" value="New Demo Plywood Enquiry">
+            <input type="hidden" name="from_name" value="Demo Plywood Website">
+            <input type="checkbox" name="botcheck" class="hidden-botcheck" tabindex="-1" autocomplete="off">
+
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+              </div>
+              <div class="field">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company" placeholder="Enter your company name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="name@company.com" required>
+              </div>
+              <div class="field">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="product">Product Interest</label>
+                <select id="product" name="product" required>
+                  <option value="">Select a category</option>
+                  <option value="Plywood">Plywood</option>
+                  <option value="Veneers">Veneers</option>
+                  <option value="Laminates">Laminates</option>
+                  <option value="Multiple Categories">Multiple Categories</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="quantity">Requirement Type</label>
+                <input type="text" id="quantity" name="quantity" placeholder="Bulk / Project / Dealer / Sample">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Your Requirement</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us about product type, quantity, dimensions, project use, or delivery needs." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">Submit Enquiry</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Demo Plywood</h3>
+        <p>Premium B2B supplier of plywood, veneers, and laminates in Rajkot, Gujarat.</p>
+      </div>
+      <div>
+        <p class="footer-label">Navigate</p>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <p class="footer-label">Business profile</p>
+        <span>Rajkot, Gujarat</span>
+        <span>5+ Years Experience</span>
+        <span>Web3Forms Ready</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
